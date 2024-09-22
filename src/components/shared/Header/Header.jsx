@@ -14,7 +14,7 @@ const Header = () => {
           </ul>
         </nav>
           <div className="flex gap-[30px]">
-            <button className="bg-white p-[10px_15px] rounded-[20px] border-[1px]">Login</button>
+            <button className="bg-white p-[10px_15px] rounded-[20px] border-[1px] text-[#606060]">Login</button>
             <button>Sign up</button>
           </div>
       </div><hr />
