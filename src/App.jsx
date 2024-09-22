@@ -7,6 +7,7 @@ import Pricing from "./pages/pricing/Pricing"
 import Contact from "./pages/contact/Contact"
 import Menu2 from "./pages/menu/menu2/Menu2"
 import Menu3 from "./pages/menu/menu3/Menu3"
+import SignUp from "./pages/sign-up/SignUp"
 
 
 const App = () => {
@@ -46,6 +47,10 @@ const App = () => {
           {
             path:"/contact",
             element:<Contact/>
+          },
+          {
+            path:"/sign-up",
+            element:<SignUp/>
           }
         ]
     }

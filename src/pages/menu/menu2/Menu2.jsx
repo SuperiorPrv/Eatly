@@ -10,6 +10,7 @@ import img7 from "./img/Food Image (2).png"
 import img10 from "./img/Illustration 01.png"
 import img11 from "./img/Plus.png"
 import img12 from "./img/Plus (1).png"
+import { Link } from "react-router-dom"
 
 const Menu2 = () => {
   return <>
@@ -19,11 +20,13 @@ const Menu2 = () => {
       <div className="flex justify-around items-center  flex-wrap">
         <h1 className="text-[#323142] text-[40px] font-bold">The Chicken King</h1>
 
-        <div className="flex ] justify-around">
-          <h1 className="text-gray-600">
+        <div className="flex  justify-around">
+            <Link className="flex" to={"/menu3"}>
+            <h1 className="text-gray-600">
             24min •</h1>
           <img className="w-[30px] h-[30px]" src={img1} alt="" />
-          <h1 className="text-gray-700">4.8</h1></div>
+          <h1 className="text-gray-700">4.8</h1>
+            </Link> </div>
         <img src={img2} alt="" />
       </div>
        <br /><br />
