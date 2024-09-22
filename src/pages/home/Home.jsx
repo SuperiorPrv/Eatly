@@ -16,6 +16,10 @@ import sec4_3 from "./images/sec4_3.png"
 
 // -----------------------------------
 
+import bg_sec5 from "./images/bg_sec5.png"
+import sec6_person from "./images/sec6_person.png"
+import Stars from "./images/Stars.png"
+import divider from "./images/divider.png"
 
 const Home = () => {
   return (<>
@@ -108,8 +112,8 @@ const Home = () => {
     {/* ------------------------------------------------------------------------------------------- */}
 
     <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE] font-bold'>Dishes</span></h1>
-    <section className='flex justify-center gap-[50px] p-[0px_10px] overflow-auto mt-[20px]'>
-      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+    <section className='flex justify-center gap-[80px] p-[0px_10px] overflow-auto mt-[20px]'>
+      <div className='border p-[10px_10px] rounded-[15px]  min-w-[210px]'>
         <img src={sec4_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Chicken Hell</h1>
@@ -119,7 +123,7 @@ const Home = () => {
         <button className='border rounded-[10px] w-[50px] bg-black text-white font-black text-[30px]'>+</button>
         </div>
       </div>
-      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+      <div className='border p-[10px_10px] rounded-[15px]  min-w-[210px]'>
         <img className='mb-[20px]' src={sec4_2} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7C5BA] text-[#FB471D] bg-[#F7C5BA]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Swe Dish</h1>
@@ -129,7 +133,7 @@ const Home = () => {
         <button className='border rounded-[10px] w-[50px] bg-black text-white font-black text-[30px]'>+</button>
         </div>
       </div>
-      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+      <div className='border p-[10px_10px] rounded-[15px]  min-w-[210px]'>
         <img className='mb-[20px]' src={sec4_3} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Swe Dish</h1>
@@ -139,7 +143,7 @@ const Home = () => {
         <button className='border rounded-[10px] w-[50px] bg-black text-white font-black text-[30px]'>+</button>
         </div>
       </div>
-      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+      <div className='border p-[10px_10px] rounded-[15px]  min-w-[210px]'>
         <img src={sec4_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7C5BA] text-[#FB471D] bg-[#F7C5BA]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Chicken Hell</h1>
@@ -149,7 +153,7 @@ const Home = () => {
         <button className='border rounded-[10px] w-[50px] bg-black text-white font-black text-[30px]'>+</button>
         </div>
       </div>
-      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+      <div className='border p-[10px_10px] rounded-[15px]  min-w-[210px]'>
         <img className='mb-[20px]' src={sec4_2} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Swe Dish</h1>
@@ -163,11 +167,102 @@ const Home = () => {
 
     <p className='mt-[20px] text-center text-gray-400'>View All -></p>
 
+    <hr className='mt-[100px]'/>
+
     {/* -------------------------------------------------------------------------------------------- */}
 
-     <section>
+     <section className='mt-[100px] justify-center flex-wrap flex items-center gap-[200px]'>
+      <div>
+        <h1 className='font-black text-[55px] sm:text-[35px] sm:text-center sm:p-[0px_10px]'>Control <span className='text-[#5C4EAE] font-bold'>Purchases</span> <br /> Via Dashboard</h1>
+        <div className='flex items-center shadow-xl border sm:w-[355px] p-[5px_20px] gap-[30px] w-[400px] rounded-[20px] border-gray-100 bg-gray-100'>
+          <div>
+            <img className='w-[100px]' src={sec4_1} alt="" />
+          </div>
+          <div>
+            <h1 className='text-[25px] font-bold'>Chicken Hell</h1>
+            <div className='flex gap-[70px] sm:gap-[40px] items-center'>
+              <p className='font-normal'>On The Way</p>
+              <p className='text-[12px] text-gray-500'>3:09 PM</p>
+            </div>
+          </div>
+        </div>
 
+        <div className='flex items-center mt-[10px] border sm:w-[355px] p-[5px_20px] gap-[30px] w-[400px] rounded-[20px] border-gray-100 bg-gray-100'>
+          <div>
+            <img className='w-[100px]' src={sec4_2} alt="" />
+          </div>
+          <div>
+            <h1 className='text-[25px] font-bold'>Swe Dish</h1>
+            <div className='flex gap-[80px] sm:gap-[40px] items-center'>
+              <p className='font-normal'>Delivered</p>
+              <p className='text-[12px] text-gray-500'>Yesterday</p>
+            </div>
+          </div>
+        </div>
+
+        <div className='flex items-center mt-[10px] border sm:w-[355px] p-[5px_20px] gap-[30px] w-[400px] rounded-[20px] border-gray-100 bg-gray-100'>
+          <div>
+            <img className='w-[100px]' src={sec4_3} alt="" />
+          </div>
+          <div>
+            <h1 className='text-[25px] font-bold'>Fish Hell Veg</h1>
+            <div className='flex gap-[50px] sm:gap-[20px] items-center'>
+              <p className='font-normal text-red-600'>Fish Hell Veg</p>
+              <p className='text-[12px] text-gray-500'>Yesterday</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img className='w-[550px] rounded-[30px] shadow-xl sm:w-[300px] sm:mt-[-150px]' src={bg_sec5} alt="" />
+      </div>
      </section>
+
+     
+     <hr className='mt-[100px]'/>
+
+
+     <h1 className='font-black text-[40px] mt-[100px] text-center sm:text-[35px] sm:text-center sm:p-[0px_10px]'>Customer <span className='text-[#5C4EAE] font-bold'>Say</span></h1>
+     <section className='mt-[20px] flex gap-[45px] overflow-auto 2xl:p-[0px_20px]'>
+      <div className='border rounded-[30px] shadow-xl bg-gray-100 border-gray-100 p-[30px_30px] min-w-[450px] w-[450px]'>
+        <div className='flex items-center gap-[20px]'>
+        <div>
+          <img src={sec6_person} alt="" />
+        </div>
+          <div>
+            <h1 className='font-bold'>Alexander R.</h1>
+            <p className='text-gray-600'>01 Year With Us </p>
+          </div>
+        </div><br />
+        <p className='text-gray-600'>“ Online invoice payment helps companies save <br /> time, are faster and save maximum effort for the <br /> clients and save maximum effort. Online invoice <br /> payment helps companies save time ”</p><br />
+        <img src={Stars} alt="" />
+      </div>
+
+      <div className='border rounded-[30px] shadow-xl bg-gray-100 h-[210px] border-gray-100 min-w-[450px] p-[30px_30px]'>
+       <p className='text-gray-600'>“ Online invoice payment helps companies save <br /> time, are faster and save maximum effort for the <br /> clients and save maximum effort. Online invoice <br /> payment helps companies save time ”</p><br />
+        <img src={Stars} alt="" />
+      </div>
+      
+      <div className='border rounded-[30px] shadow-xl bg-gray-100 h-[210px] border-gray-100 min-w-[450px] p-[30px_30px]'>
+       <p className='text-gray-600'>“ Online invoice payment helps companies save <br /> time, are faster and save maximum effort for the <br /> clients and save maximum effort. Online invoice <br /> payment helps companies save time ”</p><br />
+        <img src={Stars} alt="" />
+      </div>
+     </section>
+     <img className='ml-[800px] 2xl:hidden mt-[-50px]' src={divider} alt="" />
+
+    <hr className='mt-[150px]' />
+
+    <section className='p-[0px_20px]'>
+     <div className='bg mb-[100px] p-[60px_50px] rounded-[30px] md:p-[50px_10px] mt-[100px]'>
+        <h1 className='text-[50px] md:text-center md:text-[35px] font-bold text-[#D9D7E9]'>GET 50%</h1>
+        <div className='flex bg-[#D9D7E9] md:block md:m-auto flex-wrap w-[400px] sm:w-[280px] gap-[30px] rounded-[20px] border p-[10px_20px] items-center'>
+          <input className='outline-none md:text-center md:ml-[20px] bg-[#D9D7E9]' type="text" placeholder='Enter Your Email Address' />
+          <button className='border p-[10px_20px] sm:block sm:m-auto hover:bg-[#6B2FBC] bg-[#6C5FBC] border-[#6C5FBC] text-white rounded-[15px]'>SUBSCRIBE</button>
+        </div>
+     </div>
+     <img className='ml-[900px] xl:hidden p-[0px_30px] w-[300px] mb-[50px] mt-[-230px]' src={sec4_2} alt="" />
+     </section> 
   
 
     </Container>
