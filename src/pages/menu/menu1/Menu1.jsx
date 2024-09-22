@@ -26,7 +26,7 @@ const Menu1 = () => {
           </div>
           <p className='text-[#ACADB9] my-[10px]'>Most Popular</p>
           <h3 className='text-[20px] font-semibold mt-[20px] mb-[10px]'>Price</h3>
-          <input className='w-[100%] bg-[#6C5FBC]' type="range" name="" id="" />
+          <input className='w-[100%] bg-[#6C5FBC] mb-[20px]' type="range" name="" id="" />
           <div className='flex w-[100%] justify-between text-[#C2C3CB] mb-[20px] gap-[5px] flex-wrap'>
             <p>$0</p>
             <p>$25</p>
