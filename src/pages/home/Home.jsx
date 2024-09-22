@@ -60,7 +60,7 @@ const Home = () => {
         <img className='sm:w-[300px]' src={Mobile} alt="" />
       </div>
       <div className='sm:mt-[-50px]'>
-        <h1 className='font-black text-[55px] sm:text-[35px]'>Premium <span className='text-[#5C4EAE]'> Quality</span> <br /> For Your Health</h1><br />
+        <h1 className='font-black text-[55px] sm:text-[35px]'>Premium <span className='text-[#5C4EAE] font-bold'> Quality</span> <br /> For Your Health</h1><br />
         <p className='text-gray-400 sm:text-[10px]'>Premium quality food is made with ingredients that <br /> are packed with essential vitamins, minerals.</p><br />
         <p className='text-gray-400 sm:text-[10px]'>These foods promote overall wellness by support <br /> healthy digestion and boosting immunity</p><br />
         <button className='border bg-[#5C4EAE] p-[12px_15px] rounded-[12px] text-white'>Download</button>
@@ -70,7 +70,7 @@ const Home = () => {
 
     <hr className='mt-[100px]' />
 
-      <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE]'>Restaurants</span></h1>
+      <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE] font-bold'>Restaurants</span></h1>
     <section className='mt-[20px] flex justify-center gap-[100px] p-[0px_10px] overflow-auto '>
       <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
         <img src={sec3_1} alt="" />
@@ -107,8 +107,8 @@ const Home = () => {
 
     {/* ------------------------------------------------------------------------------------------- */}
 
-    <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE]'>Dishes</span></h1>
-    <section className='flex justify-center gap-[50px] p-[0px_10px] overflow-auto'>
+    <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE] font-bold'>Dishes</span></h1>
+    <section className='flex justify-center gap-[50px] p-[0px_10px] overflow-auto mt-[20px]'>
       <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
         <img src={sec4_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
