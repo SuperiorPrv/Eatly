@@ -29,11 +29,11 @@ const Menu3 = () => {
           <img src="/src/pages/menu/menu3/svg/threeVet.svg" className="w-[80px] self-end relative top-[30px] sm:hidden left-[90px]" alt="" />
           <div className="flex gap-x-2 flex-wrap p-3 py-2 items-center rounded-xl bg-white w-[100%] shadow-xl shadow-gray-300 justify-between">
             <div className="flex flex-wrap gap-x-2 items-center xs:mx-auto">
-            <img src="/src/pages/menu/menu3/img/image copy.png" className="w-[100px] mx-auto" alt="" />
-            <div className="mx-auto xs:text-center">
-              <p className="font-bold text-[1.4em]">Chicken Hell</p>
-              <p className="font-bold">$12.9</p>
-            </div>
+              <img src="/src/pages/menu/menu3/img/image copy.png" className="w-[100px] mx-auto" alt="" />
+              <div className="mx-auto xs:text-center">
+                <p className="font-bold text-[1.4em]">Chicken Hell</p>
+                <p className="font-bold">$12.9</p>
+              </div>
             </div>
             <div className="flex flex-col items-center gap-y-3 xs:mx-auto">
               <div className="flex items-center gap-x-2">
@@ -46,11 +46,11 @@ const Menu3 = () => {
           </div>
           <div className="flex gap-x-2 flex-wrap p-3 py-2 items-center rounded-xl bg-white w-[100%] shadow-xl shadow-gray-300 justify-between">
             <div className="flex flex-wrap gap-x-2 items-center xs:mx-auto">
-            <img src="/src/pages/menu/menu3/img/image copy 2.png" className="w-[100px] mx-auto" alt="" />
-            <div className="mx-auto xs:text-center">
-              <p className="font-bold text-[1.4em]">Chicken Hell</p>
-              <p className="font-bold">$12.9</p>
-            </div>
+              <img src="/src/pages/menu/menu3/img/image copy 2.png" className="w-[100px] mx-auto" alt="" />
+              <div className="mx-auto xs:text-center">
+                <p className="font-bold text-[1.4em]">Chicken Hell</p>
+                <p className="font-bold">$12.9</p>
+              </div>
             </div>
             <div className="flex flex-col items-center gap-y-3 xs:mx-auto">
               <div className="flex items-center gap-x-2">
@@ -61,8 +61,20 @@ const Menu3 = () => {
               <p className="font-bold">$38.97</p>
             </div>
           </div>
-          <div className="flex">
-            <input  type="range" />
+          <div className="flex gap-x-2 mt-20 justify-between xs:flex-wrap items-center">
+            <div className="bg-gray-200 w-[100%] flex p-5 gap-x-2 rounded-xl focus-within:bg-gray-100 duration-300">
+              <img src="/src/pages/menu/menu3/svg/inp.svg" className="w-[25px]" alt="" />
+              <input type="search" onInput="" placeholder="Apply Coupon" className="text-[20px] w-[100%] mx-auto bg-transparent duration-300 outline-none" name="" id="" />
+            </div>
+            <button className="px-8 text-white py-5 active:bg-purple-500 mx-auto my-3 xs:w-[100%] duration-300 active:scale-90 bg-[#6C5FBC] self-end rounded-xl">Apply</button>
+          </div>
+          <div className="py-3 flex justify-between border-dashed text-[20px] text-gray-400 border-b-2 text-gray">
+            <p>Subtotal</p>
+            <p>$58.96</p>
+          </div>
+          <div className="py-3 flex justify-between border-dashed text-[20px] text-gray-400 border-b-2 text-gray">
+            <p>Subtotal</p>
+            <p>$58.96</p>
           </div>
         </div>
       </section>
