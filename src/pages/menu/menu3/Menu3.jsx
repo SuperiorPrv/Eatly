@@ -4,8 +4,8 @@ const Menu3 = () => {
   return (
     <Container>
       <section className="w-[100%] px-10 flex flex-col items-center mb-32">
-        <img src="src/pages/menu/menu3/svg/map.svg" className="shadow-[0px_0px_100px_] shadow-gray-200 mt-32 rounded-[50px]" alt="" />
-        <div className="bg-white rounded-3xl relative top-[-150px] shadow-[0px_0px_70px_] shadow-gray-400">
+        <img src="src/pages/menu/menu3/svg/map.svg" className="shadow-[0px_0px_100px_] shadow-gray-200 mt-32 md:mt-20 rounded-[50px] md:shadow-[0px_0px_50px_] md:shadow-slate-200" alt="" />
+        <div className="bg-white rounded-3xl relative top-[-150px] md:top-[50px] shadow-[0px_0px_70px_] shadow-gray-400">
           <div className="flex gap-x-3 items-center bg-[#323142] text-white p-5 rounded-[20px_20px_0_0]">
             <img src="/src/pages/menu/menu3/img/image.png" className="w-[60px]" alt="" />
             <div>
@@ -23,6 +23,46 @@ const Menu3 = () => {
               <p>15 Minutes</p>
             </div>
             <button className="p-6 text-white py-2 bg-[#6C5FBC] h-fit self-end rounded">Pending</button>
+          </div>
+        </div>
+        <div className="w-[60%] flex flex-col gap-y-5 font-bold md:w-[100%] sm:mt-32">
+          <img src="/src/pages/menu/menu3/svg/threeVet.svg" className="w-[80px] self-end relative top-[30px] sm:hidden left-[90px]" alt="" />
+          <div className="flex gap-x-2 flex-wrap p-3 py-2 items-center rounded-xl bg-white w-[100%] shadow-xl shadow-gray-300 justify-between">
+            <div className="flex flex-wrap gap-x-2 items-center xs:mx-auto">
+            <img src="/src/pages/menu/menu3/img/image copy.png" className="w-[100px] mx-auto" alt="" />
+            <div className="mx-auto xs:text-center">
+              <p className="font-bold text-[1.4em]">Chicken Hell</p>
+              <p className="font-bold">$12.9</p>
+            </div>
+            </div>
+            <div className="flex flex-col items-center gap-y-3 xs:mx-auto">
+              <div className="flex items-center gap-x-2">
+                <img src="/src/pages/menu/menu3/svg/mines.svg" alt="" />
+                <p>03</p>
+                <img src="/src/pages/menu/menu3/svg/plus.svg" alt="" />
+              </div>
+              <p className="font-bold">$38.97</p>
+            </div>
+          </div>
+          <div className="flex gap-x-2 flex-wrap p-3 py-2 items-center rounded-xl bg-white w-[100%] shadow-xl shadow-gray-300 justify-between">
+            <div className="flex flex-wrap gap-x-2 items-center xs:mx-auto">
+            <img src="/src/pages/menu/menu3/img/image copy 2.png" className="w-[100px] mx-auto" alt="" />
+            <div className="mx-auto xs:text-center">
+              <p className="font-bold text-[1.4em]">Chicken Hell</p>
+              <p className="font-bold">$12.9</p>
+            </div>
+            </div>
+            <div className="flex flex-col items-center gap-y-3 xs:mx-auto">
+              <div className="flex items-center gap-x-2">
+                <img src="/src/pages/menu/menu3/svg/mines.svg" alt="" />
+                <p>03</p>
+                <img src="/src/pages/menu/menu3/svg/plus.svg" alt="" />
+              </div>
+              <p className="font-bold">$38.97</p>
+            </div>
+          </div>
+          <div className="flex">
+            <input  type="range" />
           </div>
         </div>
       </section>
