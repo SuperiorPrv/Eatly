@@ -25,8 +25,10 @@ const Menu3 = () => {
             <button className="p-6 text-white py-2 bg-[#6C5FBC] h-fit self-end rounded">Pending</button>
           </div>
         </div>
-        <div className="w-[60%] flex flex-col gap-y-5 font-bold md:w-[100%] sm:mt-32">
-          <img src="/src/pages/menu/menu3/svg/threeVet.svg" className="w-[80px] self-end relative top-[30px] sm:hidden left-[90px]" alt="" />
+        <div className="w-[80%] mx-auto flex gap-y-5 font-bold lg:w-[100%] md:mt-32">
+          <img className="self-end width-[100px] md:hidden" src="/src/pages/menu/menu3/svg/roundedleft.svg" alt="" />
+          <div className="flex flex-col gap-y-5 w-[100%]">
+          <img src="/src/pages/menu/menu3/svg/threeVet.svg" className="w-[80px] self-end relative top-[30px] md:hidden left-[90px]" alt="" />
           <div className="flex gap-x-2 flex-wrap p-3 py-2 items-center rounded-xl bg-white w-[100%] shadow-xl shadow-gray-300 justify-between">
             <div className="flex flex-wrap gap-x-2 items-center xs:mx-auto">
               <img src="/src/pages/menu/menu3/img/image copy.png" className="w-[100px] mx-auto" alt="" />
@@ -68,14 +70,21 @@ const Menu3 = () => {
             </div>
             <button className="px-8 text-white py-5 active:bg-purple-500 mx-auto my-3 xs:w-[100%] duration-300 active:scale-90 bg-[#6C5FBC] self-end rounded-xl">Apply</button>
           </div>
-          <div className="py-3 flex justify-between border-dashed text-[20px] text-gray-400 border-b-2 text-gray">
+          <div className="py-3 flex justify-between border-dashed text-[20px] text-gray-500 border-b-2">
             <p>Subtotal</p>
             <p>$58.96</p>
           </div>
-          <div className="py-3 flex justify-between border-dashed text-[20px] text-gray-400 border-b-2 text-gray">
+          <div className="py-3 flex justify-between border-dashed text-[20px] text-gray-500 border-b-2">
             <p>Subtotal</p>
-            <p>$58.96</p>
+            <p>$3.59</p>
           </div>
+          <div className="py-3 flex justify-between font-extrabold border-dashed text-[20px] border-b-2">
+            <p className="font-bold text-[1.3em]">Total</p>
+            <p className="font-bold text-[1.3em]">$62.55</p>
+          </div>
+          <button className="px-8 text-white text-[1.2em] py-5 active:bg-purple-500 mx-auto my-3 w-[100%] duration-300 active:scale-90 bg-[#6C5FBC] font-bold self-end rounded-xl">Review Payment</button>
+          </div>
+          <img className="self-end width-[100px] md:hidden" src="/src/pages/menu/menu3/svg/roundright.svg" alt="" />
         </div>
       </section>
     </Container>
