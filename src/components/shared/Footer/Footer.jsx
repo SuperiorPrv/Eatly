@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <Container>
-      <footer className='bg-[#EAEAEA] p-[40px] text-[#999999]'>
+      <footer className='bg-[#EAEAEA] p-[60px] py-[80px] text-[#999999]'>
         <div className='flex flex-wrap items-center justify-between gap-[10px]'>
           <img src={logo} alt="" />
           <div className='flex items-center gap-[40px] sm:gap-[15px]'>
@@ -19,7 +19,7 @@ const Footer = () => {
             <Link to="/contact" className='hover:cursor-pointer hover:underline'>Contact</Link>
           </div>
         </div>
-        <hr className='my-[30px] bg-[#999999] p-[0.3px]' />
+        <hr className='my-[30px] h-[2px] border-none bg-[#999999]' />
         <div className='flex flex-wrap items-center justify-between  gap-[10px]'>
           <p>© 2023 EATLY All Rights Reserved.</p>
           <div className='flex items-center gap-[40px] sm:gap-[20px]'>
