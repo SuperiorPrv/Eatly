@@ -8,9 +8,13 @@ import strelka_sec3 from "./images/strelka_sec3.png"
 import Bookmark_sec3 from "./images/Bookmark_sec3.png"
 import sec3_1 from "./images/sec3_1.png"
 
+// ------------------------------------
+
 import sec4_1 from "./images/sec4_1.png"
 import sec4_2 from "./images/sec4_2.png"
 import sec4_3 from "./images/sec4_3.png"
+
+// -----------------------------------
 
 
 const Home = () => {
@@ -101,6 +105,8 @@ const Home = () => {
 
     <hr className='mt-[100px]' />
 
+    -------------------------------------------------------------------------------------------
+
     <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE]'>Dishes</span></h1>
     <section className='flex justify-center gap-[50px] p-[0px_10px] overflow-auto'>
       <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
@@ -157,6 +163,7 @@ const Home = () => {
 
     <p className='mt-[20px] text-center text-gray-400'>View All -></p>
 
+    --------------------------------------------------------------------------------------------
 
   
 
