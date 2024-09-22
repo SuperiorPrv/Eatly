@@ -14,6 +14,7 @@ import img12 from "./img/Plus (1).png"
 const Menu2 = () => {
   return <>
     <Container>
+      <div className="p-[60px]">
       <img className="m-auto" src={img} alt="" /> <br /> <br />
       <div className="flex justify-around items-center  flex-wrap">
         <h1 className="text-[#323142] text-[40px] font-bold">The Chicken King</h1>
@@ -201,6 +202,7 @@ const Menu2 = () => {
         </div>
       </menu> 
       <br /><br /><br /><br />
+    </div>
   </Container>
   </>
 }
