@@ -14,9 +14,9 @@ const Footer = () => {
         <div className='flex flex-wrap items-center justify-between gap-[10px]'>
           <Link to={"/home"}><img className='hover:cursor-pointer' src={logo} alt="" /></Link>
           <div className='flex items-center gap-[40px] sm:gap-[15px]'>
+            <Link style={location.pathname=="/menu"?{color:"#6C5FBC"}:{color:"#999999"}} to="/menu" className='hover:cursor-pointer hover:underline'>Menu</Link>
             <Link style={location.pathname=="/blog"?{color:"#6C5FBC"}:{color:"#999999"}} to="/blog" className='hover:cursor-pointer hover:underline'>Blog</Link>
             <Link style={location.pathname=="/pricing"?{color:"#6C5FBC"}:{color:"#999999"}} to="/pricing" className='hover:cursor-pointer hover:underline'>Pricing</Link>
-            <Link style={location.pathname=="/"?{color:"#6C5FBC"}:{color:"#999999"}} className='hover:cursor-pointer hover:underline'>About Us</Link>
             <Link style={location.pathname=="/contact"?{color:"#6C5FBC"}:{color:"#999999"}} to="/contact" className='hover:cursor-pointer hover:underline'>Contact</Link>
           </div>
         </div>
