@@ -1,8 +1,4 @@
 import Container from '@/components/shared/Container/Container'
-import i1 from './images/image.png'
-import i2 from './images/image copy.png'
-import i3 from './images/image copy 2.png'
-import i4 from './images/image copy 3.png'
 import ii1 from './images/image copy 4.png'
 import ii2 from './images/image copy 5.png'
 import ii3 from './images/image copy 6.png'
