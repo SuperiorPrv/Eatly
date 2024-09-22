@@ -16,6 +16,7 @@ const App = () => {
       element:<Layout/>,
       children:[
           {
+            index: true,
             path:"/home",
             element:<Home/>
           },
