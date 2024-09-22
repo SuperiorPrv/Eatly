@@ -13,7 +13,7 @@ const Menu3 = () => {
               <p className="text-gray-300">Food Rider</p>
             </div>
           </div>
-          <div className="flex w-[100%] gap-x-5 justify-around flex-wrap p-4 pb-6">
+          <div className="flex gap-3 w-[100%] gap-x-5 justify-around flex-wrap p-4 pb-6">
             <img src="/src/pages/menu/menu3/svg/floctoloc.svg" alt="" />
             <div>
               <p className="text-gray-400">Your Address</p>

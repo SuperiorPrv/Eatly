@@ -4,22 +4,23 @@ import l1 from "./images/image.png";
 import l2 from "./images/image copy.png";
 import l3 from "./images/image copy 2.png";
 import l4 from "./images/image copy 3.png";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  let location = useLocation()
   return (
     <Container>
-      <footer className='bg-[#EAEAEA] p-[40px] text-[#999999]'>
+      <footer className='bg-[#EAEAEA] p-[60px] py-[80px] text-[#999999]'>
         <div className='flex flex-wrap items-center justify-between gap-[10px]'>
-          <img src={logo} alt="" />
+          <Link to={"/home"}><img className='hover:cursor-pointer' src={logo} alt="" /></Link>
           <div className='flex items-center gap-[40px] sm:gap-[15px]'>
-            <Link to="/blog" className='hover:cursor-pointer hover:underline'>Blog</Link>
-            <Link to="/pricing" className='hover:cursor-pointer hover:underline'>Pricing</Link>
-            <Link className='hover:cursor-pointer hover:underline'>About Us</Link>
-            <Link to="/contact" className='hover:cursor-pointer hover:underline'>Contact</Link>
+            <Link style={location.pathname=="/menu"?{color:"#6C5FBC"}:{color:"#999999"}} to="/menu" className='hover:cursor-pointer hover:underline'>Menu</Link>
+            <Link style={location.pathname=="/blog"?{color:"#6C5FBC"}:{color:"#999999"}} to="/blog" className='hover:cursor-pointer hover:underline'>Blog</Link>
+            <Link style={location.pathname=="/pricing"?{color:"#6C5FBC"}:{color:"#999999"}} to="/pricing" className='hover:cursor-pointer hover:underline'>Pricing</Link>
+            <Link style={location.pathname=="/contact"?{color:"#6C5FBC"}:{color:"#999999"}} to="/contact" className='hover:cursor-pointer hover:underline'>Contact</Link>
           </div>
         </div>
-        <hr className='my-[30px] bg-[#999999] p-[0.3px]' />
+        <hr className='my-[30px] h-[2px] border-none bg-[#999999]' />
         <div className='flex flex-wrap items-center justify-between  gap-[10px]'>
           <p>© 2023 EATLY All Rights Reserved.</p>
           <div className='flex items-center gap-[40px] sm:gap-[20px]'>
