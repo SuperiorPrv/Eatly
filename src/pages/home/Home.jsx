@@ -8,6 +8,15 @@ import strelka_sec3 from "./images/strelka_sec3.png"
 import Bookmark_sec3 from "./images/Bookmark_sec3.png"
 import sec3_1 from "./images/sec3_1.png"
 
+// ------------------------------------
+
+import sec4_1 from "./images/sec4_1.png"
+import sec4_2 from "./images/sec4_2.png"
+import sec4_3 from "./images/sec4_3.png"
+
+// -----------------------------------
+
+
 const Home = () => {
   return (<>
     <Container>
@@ -67,7 +76,7 @@ const Home = () => {
         <img src={sec3_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Chicken King</h1>
-        <div className='flex items-center justify-between p-[0px_10px]'>
+        <div className='flex items-center justify-between p-[0px_10px] mb-[10px]'>
           <p className='text-gray-400'>24min • 4.8</p>
           <img className='w-[20px]' src={Bookmark_sec3} alt="" />
         </div>
@@ -76,7 +85,7 @@ const Home = () => {
         <img src={sec3_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7C5BA] text-[#FB471D] bg-[#F7C5BA]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Burger King</h1>
-        <div className='flex items-center justify-between p-[0px_10px]'>
+        <div className='flex items-center justify-between p-[0px_10px] mb-[10px]'>
           <p className='text-gray-400'>24min • 4.9</p>
           <img className='w-[20px]' src={Bookmark_sec3} alt="" />
         </div>
@@ -85,7 +94,7 @@ const Home = () => {
         <img src={sec3_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Chicken King</h1>
-        <div className='flex items-center justify-between p-[0px_10px]'>
+        <div className='flex items-center justify-between p-[0px_10px] mb-[10px]'>
           <p className='text-gray-400'>24min • 5.0</p>
           <img className='w-[20px]' src={Bookmark_sec3} alt="" />
         </div>
@@ -96,10 +105,67 @@ const Home = () => {
 
     <hr className='mt-[100px]' />
 
-    <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE]'>Dishes</span></h1>
-    <section className='mt-[100px]'>
+    -------------------------------------------------------------------------------------------
 
+    <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE]'>Dishes</span></h1>
+    <section className='flex justify-center gap-[50px] p-[0px_10px] overflow-auto'>
+      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+        <img src={sec4_1} alt="" />
+        <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Chicken Hell</h1>
+        <p className='text-gray-400 ml-[10px]'>24min • 4.8</p>
+        <div className='flex justify-between'>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>$12<span className='text-gray-400 text-[10px]'>.99</span></h1>
+        <button className='border rounded-[10px] w-[50px] bg-black text-white font-black text-[30px]'>+</button>
+        </div>
+      </div>
+      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+        <img className='mb-[20px]' src={sec4_2} alt="" />
+        <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7C5BA] text-[#FB471D] bg-[#F7C5BA]'>Healthy</button>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Swe Dish</h1>
+        <p className='text-gray-400 ml-[10px]'>34min • 4.8</p>
+        <div className='flex justify-between'>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>$19<span className='text-gray-400 text-[10px]'>.99</span></h1>
+        <button className='border rounded-[10px] w-[50px] bg-black text-white font-black text-[30px]'>+</button>
+        </div>
+      </div>
+      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+        <img className='mb-[20px]' src={sec4_3} alt="" />
+        <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Swe Dish</h1>
+        <p className='text-gray-400 ml-[10px]'>34min • 4.8</p>
+        <div className='flex justify-between'>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>$19<span className='text-gray-400 text-[10px]'>.99</span></h1>
+        <button className='border rounded-[10px] w-[50px] bg-black text-white font-black text-[30px]'>+</button>
+        </div>
+      </div>
+      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+        <img src={sec4_1} alt="" />
+        <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7C5BA] text-[#FB471D] bg-[#F7C5BA]'>Healthy</button>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Chicken Hell</h1>
+        <p className='text-gray-400 ml-[10px]'>24min • 4.8</p>
+        <div className='flex justify-between'>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>$12<span className='text-gray-400 text-[10px]'>.99</span></h1>
+        <button className='border rounded-[10px] w-[50px] bg-black text-white font-black text-[30px]'>+</button>
+        </div>
+      </div>
+      <div className='border p-[10px_10px] rounded-[10px]  min-w-[210px]'>
+        <img className='mb-[20px]' src={sec4_2} alt="" />
+        <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>Swe Dish</h1>
+        <p className='text-gray-400 ml-[10px]'>34min • 4.8</p>
+        <div className='flex justify-between'>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>$19<span className='text-gray-400 text-[10px]'>.99</span></h1>
+        <button className='border rounded-[10px] w-[50px] bg-black text-white font-black text-[30px]'>+</button>
+        </div>
+      </div>
     </section>
+
+    <p className='mt-[20px] text-center text-gray-400'>View All -></p>
+
+    --------------------------------------------------------------------------------------------
+
+  
 
     </Container>
     </>
