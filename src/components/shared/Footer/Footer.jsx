@@ -4,7 +4,7 @@ import l1 from "./images/image.png";
 import l2 from "./images/image copy.png";
 import l3 from "./images/image copy 2.png";
 import l4 from "./images/image copy 3.png";
-import { Link, useLocation, useNavigation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
   let location = useLocation()
