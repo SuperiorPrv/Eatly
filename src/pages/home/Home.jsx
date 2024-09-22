@@ -61,8 +61,9 @@ const Home = () => {
 
     <hr className='mt-[100px]' />
 
-    <section className='mt-[100px] flex justify-center gap-[100px] p-[0px_10px] overflow-auto '>
-      <div className='border border-white shadow-xl rounded-[20px] min-w-[300px]'>
+      <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE]'>Restaurants</span></h1>
+    <section className='mt-[20px] flex justify-center gap-[100px] p-[0px_10px] overflow-auto '>
+      <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
         <img src={sec3_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Chicken King</h1>
@@ -71,28 +72,31 @@ const Home = () => {
           <img className='w-[20px]' src={Bookmark_sec3} alt="" />
         </div>
       </div>
-      <div className='border border-white shadow-xl rounded-[20px] min-w-[300px]'>
+      <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
         <img src={sec3_1} alt="" />
-        <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
-        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Chicken King</h1>
+        <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7C5BA] text-[#FB471D] bg-[#F7C5BA]'>Healthy</button>
+        <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Burger King</h1>
         <div className='flex items-center justify-between p-[0px_10px]'>
-          <p className='text-gray-400'>24min • 4.8</p>
+          <p className='text-gray-400'>24min • 4.9</p>
           <img className='w-[20px]' src={Bookmark_sec3} alt="" />
         </div>
       </div>
-      <div className='border border-white shadow-xl rounded-[20px] min-w-[300px]'>
+      <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
         <img src={sec3_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Chicken King</h1>
         <div className='flex items-center justify-between p-[0px_10px]'>
-          <p className='text-gray-400'>24min • 4.8</p>
+          <p className='text-gray-400'>24min • 5.0</p>
           <img className='w-[20px]' src={Bookmark_sec3} alt="" />
         </div>
       </div>
     </section>
 
+    <p className='mt-[20px] text-center text-gray-400'>View All -></p>
+
     <hr className='mt-[100px]' />
 
+    <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE]'>Dishes</span></h1>
     <section className='mt-[100px]'>
 
     </section>
