@@ -1,4 +1,4 @@
-import img from "../menu2/img/Mask Group (1)"
+import img from "./img/Mask Group (1).png"
 
 const Menu2 = () => {
   return <>

@@ -5,6 +5,8 @@ import Menu1 from "./pages/menu/menu1/Menu1"
 import Blog from "./pages/blog/Blog"
 import Pricing from "./pages/pricing/Pricing"
 import Contact from "./pages/contact/Contact"
+import Menu2 from "./pages/menu/menu2/Menu2"
+import Menu3 from "./pages/menu/menu3/Menu3"
 
 
 const App = () => {
@@ -20,6 +22,14 @@ const App = () => {
           {
             path:"/menu",
             element:<Menu1/>
+          },
+          {
+            path:"/menu2",
+            element:<Menu2/>
+          },
+          {
+            path:"/menu3",
+            element:<Menu3/>
           },
           {
             path:"/blog",
