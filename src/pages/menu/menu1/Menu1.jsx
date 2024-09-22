@@ -2,9 +2,12 @@ import Container from '@/components/shared/Container/Container'
 import ii1 from './images/image copy 4.png'
 import ii2 from './images/image copy 5.png'
 import ii3 from './images/image copy 6.png'
+import Bookmark_sec3 from "./images/Bookmark_sec3.png"
+import sec3_1 from "./images/sec3_1.png"
+import { Link } from 'react-router-dom'
 
 const Menu1 = () => {
-  return (
+  return <>
     <Container>
       <div className='flex p-[70px] gap-[50px] md:block'>
         <div>
@@ -39,7 +42,45 @@ const Menu1 = () => {
         </div>
       </div>
     </Container>
-  )
+    <Container>
+    <h1 className='text-[35px] font-semibold ml-[70px]'>Our Top <span className='text-[#6C5FBC] font-semibold'>Restaurant</span></h1>
+       <section className='mt-[20px] flex justify-center gap-[100px] p-[0px_10px] overflow-auto px-[60px] mb-[40px]'>
+      <Link to={"/menu2"}>
+        <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
+          <img src={sec3_1} alt="" />
+          <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
+          <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Chicken King</h1>
+          <div className='flex items-center justify-between p-[0px_10px] mb-[10px]'>
+            <p className='text-gray-400'>24min • 4.8</p>
+            <img className='w-[20px]' src={Bookmark_sec3} alt="" />
+          </div>
+        </div>
+      </Link>
+      <Link to={'/menu2'}>
+        <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
+          <img src={sec3_1} alt="" />
+          <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7C5BA] text-[#FB471D] bg-[#F7C5BA]'>Healthy</button>
+          <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Burger King</h1>
+          <div className='flex items-center justify-between p-[0px_10px] mb-[10px]'>
+            <p className='text-gray-400'>24min • 4.9</p>
+            <img className='w-[20px]' src={Bookmark_sec3} alt="" />
+          </div>
+        </div>
+      </Link>
+      <Link to={'/menu2'}>
+        <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
+          <img src={sec3_1} alt="" />
+          <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
+          <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Chicken King</h1>
+          <div className='flex items-center justify-between p-[0px_10px] mb-[10px]'>
+            <p className='text-gray-400'>24min • 5.0</p>
+            <img className='w-[20px]' src={Bookmark_sec3} alt="" />
+          </div>
+        </div>
+      </Link>
+    </section>
+    </Container>
+  </>
 }
 
 export default Menu1
