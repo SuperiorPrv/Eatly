@@ -1,9 +1,9 @@
-import React from 'react'
+import img from "../menu2/img/Mask Group (1)"
 
 const Menu2 = () => {
-  return (
-    <div>Menu2</div>
-  )
+  return <>
+    <img src={img} alt="" />
+  </>
 }
 
 export default Menu2
