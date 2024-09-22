@@ -25,7 +25,7 @@ const Home = () => {
     <section className='flex justify-center flex-wrap gap-[100px] items-center mt-[30px]'>
       <div>
         <p className='text-gray-400 sm:text-[10px]'>------ OVER 1000 USERS</p>
-        <h1 className='font-bold text-[55px] sm:text-[35px]'>Enjoy Foods All <br />Over The <span className='text-[#5C4EAE]'>World</span></h1>
+        <h1 className='font-bold text-[55px] sm:text-[35px]'>Enjoy Foods All <br />Over The <span className='text-[#5C4EAE] font-bold'>World</span></h1>
         <p className='text-gray-400 sm:text-[10px]'>EatLy help you set saving goals, earn cash back offers, Go <br /> to disclaimer for more details and get paychecks up to two <br /> days early. Get a <span className='text-[#5C4EAE]'>$20 bonus</span>.</p><br />
         <div className='flex gap-[10px]'>
           <button className='border bg-[#5C4EAE] p-[12px_15px] rounded-[12px] text-white'>Get Started</button>
@@ -105,7 +105,7 @@ const Home = () => {
 
     <hr className='mt-[100px]' />
 
-    -------------------------------------------------------------------------------------------
+    {/* ------------------------------------------------------------------------------------------- */}
 
     <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE]'>Dishes</span></h1>
     <section className='flex justify-center gap-[50px] p-[0px_10px] overflow-auto'>
@@ -163,8 +163,11 @@ const Home = () => {
 
     <p className='mt-[20px] text-center text-gray-400'>View All -></p>
 
-    --------------------------------------------------------------------------------------------
+    {/* -------------------------------------------------------------------------------------------- */}
 
+     <section>
+
+     </section>
   
 
     </Container>
