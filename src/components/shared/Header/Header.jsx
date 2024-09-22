@@ -6,7 +6,7 @@ const Header = () => {
   console.log(location.pathname);
   return (
     <Container>
-      <div className=" flex justify-around items-center h-[70px]">
+      <div className=" flex justify-between  items-center h-[70px]">
         <nav>
           <ul className="flex items-center gap-[40px]">
             <li> <Link to="/home"><img src="/src/components/shared/Header/img/Logo.png" alt="" /></Link> </li>
