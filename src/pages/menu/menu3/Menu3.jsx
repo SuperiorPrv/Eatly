@@ -91,7 +91,7 @@ const Menu3 = () => {
           <div className="bg-[#6C5FBC] p-10 sm:p-2 w-[100%] mt-60 flex flex-col gap-y-3 rounded-3xl" style={{backgroundImage:'url("/src/pages/menu/menu3/svg/bg.svg")'}}>
             <p className="text-white text-[5em] font-bold sm:text-center">GET 50%</p>
             <div className="flex w-fit px-3 rounded-3xl justify-between sm:mx-auto flex-wrap items-center duration-500 bg-slate-200">
-              <input type="search" onInput="" placeholder="Enter Your Email Address" className="text-[18px] sm:text-center focus-within:bg-gray-100 sm:rounded-xl w-[300px] sm:mt-3 sm:w-[100%] sm:p-4 mx-auto bg-transparent sm:bg-slate-300 sm:placeholder:text-gray-500 focus-within:placeholder:text-gray-400 duration-300 outline-none" name="" id="" />
+              <input type="search" onInput="" placeholder="Enter Your Email Address" className="text-[18px] sm:text-center sm:focus-within:bg-gray-100 sm:rounded-xl w-[300px] sm:mt-3 sm:w-[100%] sm:p-4 mx-auto bg-transparent sm:bg-slate-300 sm:placeholder:text-gray-500 focus-within:placeholder:text-gray-400 duration-300 outline-none" name="" id="" />
             <button className="px-8 text-white py-5 active:bg-purple-500 mx-auto my-3 sm:w-[100%] duration-300 active:scale-90 bg-[#6C5FBC] self-end rounded-3xl">subscribe</button>
           </div>
           </div>
