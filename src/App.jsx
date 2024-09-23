@@ -8,7 +8,11 @@ import Contact from "./pages/contact/Contact"
 import Menu2 from "./pages/menu/menu2/Menu2"
 import SignUp from "./pages/sign-up/SignUp"
 import Loading from "./components/shared/Loading/Loading"
+<<<<<<< HEAD
 import Menu3loading from "./components/shared/Loading/menu3Loading/Menu3loading"
+=======
+import Prisingloading from "./components/shared/prisingloading/prisingloading"
+>>>>>>> 8f66f3653e8cc741deb7ddb0121219d27269ecd3
 
 let Menu1 = lazy(()=>import('./pages/menu/menu1/Menu1'))
 let Menu3 = lazy(()=>import('./pages/menu/menu3/Menu3'))
@@ -31,8 +35,8 @@ const App = () => {
           {
             path:"/menu",
             element:<Suspense fallback={<Loading/>}>
-              <Menu1/>
-            </Suspense>
+            <Menu1/>
+          </Suspense>
           },
           {
             path:"/menu2",
@@ -50,7 +54,10 @@ const App = () => {
           },
           {
             path:"/pricing",
-            element:<Pricing/>
+            element:<Suspense fallback={<Prisingloading/>}>
+            <Pricing/>
+          </Suspense>
+             
           },
           {
             path:"/contact",
