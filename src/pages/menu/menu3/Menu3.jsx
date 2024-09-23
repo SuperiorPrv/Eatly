@@ -3,7 +3,7 @@ import Container from "@/components/shared/Container/Container"
 const Menu3 = () => {
   return (
     <Container>
-      <section className="w-[100%] px-10 flex flex-col items-center mb-32">
+      <section className="w-[100%] px-10  sm:px-2 flex flex-col items-center mb-32">
         <img src="src/pages/menu/menu3/svg/map.svg" className="shadow-[0px_0px_100px_] shadow-gray-200 mt-32 md:mt-20 rounded-[50px] md:shadow-[0px_0px_50px_] md:shadow-slate-200" alt="" />
         <div className="bg-white rounded-3xl relative top-[-150px] md:top-[50px] shadow-[0px_0px_70px_] shadow-gray-400">
           <div className="flex gap-x-3 items-center bg-[#323142] text-white p-5 rounded-[20px_20px_0_0]">
@@ -90,8 +90,8 @@ const Menu3 = () => {
         </div>
           <div className="bg-[#6C5FBC] p-10 sm:p-2 w-[100%] mt-60 flex flex-col gap-y-3 rounded-3xl" style={{backgroundImage:'url("/src/pages/menu/menu3/svg/bg.svg")'}}>
             <p className="text-white text-[5em] font-bold sm:text-center">GET 50%</p>
-            <div className="flex w-fit px-3 rounded-3xl justify-between sm:mx-auto flex-wrap items-center focus-within:bg-gray-100 bg-slate-200">
-              <input type="search" onInput="" placeholder="Enter Your Email Address" className="text-[18px] sm:text-center sm:bg-white sm:rounded-xl w-[300px] sm:mt-3 sm:w-[100%] sm:p-4 mx-auto bg-transparent duration-300 outline-none" name="" id="" />
+            <div className="flex w-fit px-3 rounded-3xl justify-between sm:mx-auto flex-wrap items-center duration-500 bg-slate-200">
+              <input type="search" onInput="" placeholder="Enter Your Email Address" className="text-[18px] sm:text-center focus-within:bg-gray-100 sm:rounded-xl w-[300px] sm:mt-3 sm:w-[100%] sm:p-4 mx-auto bg-transparent sm:bg-slate-300 sm:placeholder:text-gray-500 focus-within:placeholder:text-gray-400 duration-300 outline-none" name="" id="" />
             <button className="px-8 text-white py-5 active:bg-purple-500 mx-auto my-3 sm:w-[100%] duration-300 active:scale-90 bg-[#6C5FBC] self-end rounded-3xl">subscribe</button>
           </div>
           </div>

@@ -8,6 +8,7 @@ import Contact from "./pages/contact/Contact"
 import Menu2 from "./pages/menu/menu2/Menu2"
 import SignUp from "./pages/sign-up/SignUp"
 import Loading from "./components/shared/Loading/Loading"
+import Menu3loading from "./components/shared/Loading/menu3Loading/Menu3loading"
 
 let Menu1 = lazy(()=>import('./pages/menu/menu1/Menu1'))
 let Menu3 = lazy(()=>import('./pages/menu/menu3/Menu3'))
@@ -39,7 +40,7 @@ const App = () => {
           },
           {
             path:"/menu3",
-            element: <Suspense fallback={<Loading />}>
+            element: <Suspense fallback={<Menu3loading />}>
               <Menu3/>
             </Suspense>
           },
@@ -58,6 +59,10 @@ const App = () => {
           {
             path:"/sign-up",
             element:<SignUp/>
+          },
+          {
+            path:"/js",
+            element:<Menu3loading/>
           }
         ]
     }
