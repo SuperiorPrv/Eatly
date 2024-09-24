@@ -1,12 +1,15 @@
 import Container from '@/components/shared/Container/Container'
 import "../../App.css"
-import React from 'react'
 import Home_hero from "./images/Home_hero.png"
 import home_img1 from "./images/home_img1.png"
 import Mobile from "./images/Mobile.png"
 import strelka_sec3 from "./images/strelka_sec3.png"
 import Bookmark_sec3 from "./images/Bookmark_sec3.png"
 import sec3_1 from "./images/sec3_1.png"
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
 
 // ------------------------------------
 
@@ -21,13 +24,19 @@ import sec6_person from "./images/sec6_person.png"
 import Stars from "./images/Stars.png"
 import divider from "./images/divider.png"
 
+
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (<>
     <Container>
    
    
     <section className='flex justify-center flex-wrap gap-[100px] items-center mt-[30px]'>
-      <div>
+    <div data-aos="fade-right" data-aos-duration="2000">
         <p className='text-gray-400 sm:text-[10px]'>------ OVER 1000 USERS</p>
         <h1 className='font-bold text-[55px] sm:text-[35px]'>Enjoy Foods All <br />Over The <span className='text-[#5C4EAE] font-bold'>World</span></h1>
         <p className='text-gray-400 sm:text-[10px]'>EatLy help you set saving goals, earn cash back offers, Go <br /> to disclaimer for more details and get paychecks up to two <br /> days early. Get a <span className='text-[#5C4EAE]'>$20 bonus</span>.</p><br />
@@ -37,7 +46,7 @@ const Home = () => {
         </div><br />
         <img src={home_img1} alt="" />
       </div>
-      <div>
+      <div data-aos="fade-left" data-aos-duration="2000">
         <img className='sm:w-[300px] sm:mt-[-50px]' src={Home_hero} alt="" />
       </div>
     </section>
@@ -60,10 +69,10 @@ const Home = () => {
 
 
     <section className='flex justify-center flex-wrap items-center gap-[200px] mt-[100px]'>
-      <div>
+    <div data-aos="fade-right" data-aos-duration="2000">
         <img className='sm:w-[300px]' src={Mobile} alt="" />
       </div>
-      <div className='sm:mt-[-50px]'>
+      <div data-aos="fade-left" data-aos-duration="2000" className='sm:mt-[-50px]'>
         <h1 className='font-black text-[55px] sm:text-[35px]'>Premium <span className='text-[#5C4EAE] font-bold'> Quality</span> <br /> For Your Health</h1><br />
         <p className='text-gray-400 sm:text-[10px]'>Premium quality food is made with ingredients that <br /> are packed with essential vitamins, minerals.</p><br />
         <p className='text-gray-400 sm:text-[10px]'>These foods promote overall wellness by support <br /> healthy digestion and boosting immunity</p><br />
@@ -76,7 +85,7 @@ const Home = () => {
 
       <h1 className='mt-[100px] text-center text-[40px] sm:text-[30px] font-bold'>Our Top <span className='text-[#5C4EAE] font-bold'>Restaurants</span></h1>
     <section className='mt-[20px] flex justify-center gap-[100px] p-[0px_10px] overflow-auto '>
-      <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
         <img src={sec3_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Chicken King</h1>
@@ -85,7 +94,7 @@ const Home = () => {
           <img className='w-[20px]' src={Bookmark_sec3} alt="" />
         </div>
       </div>
-      <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
         <img src={sec3_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7C5BA] text-[#FB471D] bg-[#F7C5BA]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Burger King</h1>
@@ -94,7 +103,7 @@ const Home = () => {
           <img className='w-[20px]' src={Bookmark_sec3} alt="" />
         </div>
       </div>
-      <div className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" className='border border-gray-200 rounded-t-[32px] rounded-[20px] min-w-[300px]'>
         <img src={sec3_1} alt="" />
         <button className='ml-[10px] mt-[10px] border p-[2px_10px] rounded-[10px] border-[#F7EDD0] text-[#DAA31A] bg-[#F7EDD0]'>Healthy</button>
         <h1 className='p-[10px_10px] font-bold text-[#323142] text-[20px]'>The Chicken King</h1>
@@ -254,14 +263,14 @@ const Home = () => {
     <hr className='mt-[150px]' />
 
     <section className='p-[0px_20px]'>
-     <div className='bg mb-[100px] p-[60px_50px] rounded-[30px] md:p-[50px_10px] mt-[100px]'>
+     <div data-aos="fade-up" data-aos-duration="3000" className='bg mb-[100px] p-[60px_50px] rounded-[30px] md:p-[50px_10px] mt-[100px]'>
         <h1 className='text-[50px] md:text-center md:text-[35px] font-bold text-[#D9D7E9]'>GET 50%</h1>
         <div className='flex bg-[#D9D7E9] md:block md:m-auto flex-wrap w-[400px] sm:w-[280px] gap-[30px] rounded-[20px] border p-[10px_20px] items-center'>
           <input className='outline-none md:text-center md:ml-[20px] bg-[#D9D7E9]' type="text" placeholder='Enter Your Email Address' />
           <button className='border p-[10px_20px] sm:block sm:m-auto hover:bg-[#6B2FBC] bg-[#6C5FBC] border-[#6C5FBC] text-white rounded-[15px]'>SUBSCRIBE</button>
         </div>
      </div>
-     <img className='ml-[900px] xl:hidden p-[0px_30px] w-[300px] mb-[50px] mt-[-230px]' src={sec4_2} alt="" />
+     <img data-aos="fade-up" data-aos-duration="3000" className='ml-[900px] xl:hidden p-[0px_30px] w-[300px] mb-[50px] mt-[-230px]' src={sec4_2} alt="" />
      </section> 
   
 
