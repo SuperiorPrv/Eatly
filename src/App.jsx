@@ -6,11 +6,13 @@ import Blog from "./pages/blog/Blog"
 import Pricing from "./pages/pricing/Pricing"
 import Contact from "./pages/contact/Contact"
 import Menu2 from "./pages/menu/menu2/Menu2"
-import Menu3 from "./pages/menu/menu3/Menu3"
 import SignUp from "./pages/sign-up/SignUp"
 import Loading from "./components/shared/Loading/Loading"
+import Menu3loading from "./components/shared/Loading/menu3Loading/Menu3loading"
+import Prisingloading from "./components/shared/prisingloading/prisingloading"
 
 let Menu1 = lazy(()=>import('./pages/menu/menu1/Menu1'))
+let Menu3 = lazy(()=>import('./pages/menu/menu3/Menu3'))
 
 
 const App = () => {
@@ -30,8 +32,8 @@ const App = () => {
           {
             path:"/menu",
             element:<Suspense fallback={<Loading/>}>
-              <Menu1/>
-            </Suspense>
+            <Menu1/>
+          </Suspense>
           },
           {
             path:"/menu2",
@@ -39,7 +41,9 @@ const App = () => {
           },
           {
             path:"/menu3",
-            element:<Menu3/>
+            element: <Suspense fallback={<Menu3loading />}>
+              <Menu3/>
+            </Suspense>
           },
           {
             path:"/blog",
@@ -47,7 +51,10 @@ const App = () => {
           },
           {
             path:"/pricing",
-            element:<Pricing/>
+            element:<Suspense fallback={<Prisingloading/>}>
+            <Pricing/>
+          </Suspense>
+             
           },
           {
             path:"/contact",
@@ -56,6 +63,10 @@ const App = () => {
           {
             path:"/sign-up",
             element:<SignUp/>
+          },
+          {
+            path:"/js",
+            element:<Menu3loading/>
           }
         ]
     }
