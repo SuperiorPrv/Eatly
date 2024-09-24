@@ -4,6 +4,8 @@ import Section2 from '@/components/componentsPageHome/section2/Section2'
 import Container from '@/components/shared/Container/Container'
 import React from 'react'
 import Section4 from '@/components/componentsPageHome/section4/Section4'
+import Swider from '@/components/componentsPageHome/swider/Swider'
+
 
 const Pricing = () => {
   return (
@@ -11,8 +13,8 @@ const Pricing = () => {
       <Section1/>
       <Section2/><br /><br />
       <Section3/><br /><br /><hr /><br />
-      <Section4/><br />
-
+   
+      <Swider/>
     </Container>
   )
 }
