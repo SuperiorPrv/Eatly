@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { lazy, Suspense } from "react"
 import Layout from "./layout/Layout"
 import Blog from "./pages/blog/Blog"
+import Home from "./pages/home/Home"
+import Pricing from "./pages/pricing/Pricing"
 import Contact from "./pages/contact/Contact"
 import Menu2 from "./pages/menu/menu2/Menu2"
 import SignUp from "./pages/sign-up/SignUp"
@@ -15,6 +17,8 @@ let Home = lazy(()=>import('./pages/home/Home'))
 let Pricing = lazy(()=>import('./pages/pricing/Pricing'))
 
 
+
+let Blog = lazy(()=>import ("./pages/blog/Blog"))
 
 const App = () => {
   let router = createBrowserRouter([
@@ -52,7 +56,9 @@ const App = () => {
           },
           {
             path:"/blog",
-            element:<Blog/>
+            element:<Suspense fallback={<Menu3loading />}>
+            <Blog/>
+          </Suspense>
           },
           {
             path:"/pricing",
