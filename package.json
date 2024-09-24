@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "swiper": "^11.1.14",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "react": "^18.3.1",
